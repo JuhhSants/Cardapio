@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    background-color: whitesmoke;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    position: absolute;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+}
+
+.header{
+    background: linear-gradient(120deg, #eb9424 0%, #790303 100%);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font: bold;
+}
+
+.form{
+    padding: 18px;
+}
+
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+    color: white;
+
+}
+
+.form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+.form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button{
+    background-color: transparent;
+    color: #ff6600;
+    width: 100%;
+    padding: 10px;
+    border-radius: 14px;
+    border: 2px solid #f78a30;
+    transition: 0.4s;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.form button:hover{
+    background: linear-gradient(120deg, #eb9424 0%, #790303 100%);
+    color: white;
+}
+
+.form-content.error input{
+    border-color: #ff3b25;
+}
+
+.form-content.error a{
+    color: #ff3b25;
+    visibility: visible;
+}
+
+p{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.link{
+    cursor: pointer;
+    color: #ff6600;
+    text-decoration: none;
+}
+
